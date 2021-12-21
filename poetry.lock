@@ -150,6 +150,14 @@ pytz = ">=2017.3"
 test = ["hypothesis (>=3.58)", "pytest (>=6.0)", "pytest-xdist"]
 
 [[package]]
+name = "pandas-stubs"
+version = "1.2.0.39"
+description = "Type annotations for Pandas"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[[package]]
 name = "pluggy"
 version = "0.13.1"
 description = "plugin and hook calling mechanisms for python"
@@ -352,7 +360,7 @@ h11 = ">=0.9.0,<1"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "ec515c6469a15c957d10deee26263eb555cdc08e8a0ce06392039899ed5cb95e"
+content-hash = "b3d6899fbeede2d2541619b149a8fec76749185a1ad14478ce77db7019eb77f9"
 
 [metadata.files]
 async-generator = [
@@ -527,6 +535,10 @@ pandas = [
     {file = "pandas-1.3.5-cp39-cp39-win32.whl", hash = "sha256:c69406a2808ba6cf580c2255bcf260b3f214d2664a3a4197d0e640f573b46fd3"},
     {file = "pandas-1.3.5-cp39-cp39-win_amd64.whl", hash = "sha256:32e1a26d5ade11b547721a72f9bfc4bd113396947606e00d5b4a5b79b3dcb006"},
     {file = "pandas-1.3.5.tar.gz", hash = "sha256:1e4285f5de1012de20ca46b188ccf33521bff61ba5c5ebd78b4fb28e5416a9f1"},
+]
+pandas-stubs = [
+    {file = "pandas-stubs-1.2.0.39.tar.gz", hash = "sha256:a9b8d95e41a58657918e9b0b665808925e86fbc508bc59e50e99e384b28f6498"},
+    {file = "pandas_stubs-1.2.0.39-py3-none-any.whl", hash = "sha256:d6cb03bc2c4681c678450c35b66d735937763e5c74cdeb8388fc706eb8d52d7d"},
 ]
 pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
