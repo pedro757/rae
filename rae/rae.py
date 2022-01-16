@@ -35,8 +35,3 @@ class Definitions():
     self.browser.close()
     return palabra
 
-    self.browser.close()
-    return {
-      "acepciones": acepciones,
-      "frases": frases,
-    }
