@@ -1,8 +1,8 @@
-from rae.rae import Definitions
+from rae.rae import Definitions, Raiz
 import pytest
 
 @pytest.fixture
-def palabra_menester():
+def palabra_menester() -> list[Raiz]:
   rae = Definitions()
   return rae.get_definition('menester')
 
