@@ -16,4 +16,5 @@ def test_definition(palabra_menester):
   assert acepciones[2] == "3. m. pl. Necesidades fisiológicas."
 
 def test_ethymology(palabra_menester):
-  assert palabra_menester[0]['etimologia'] == "Del lat. ministerium 'servicio', 'oficio'."
+  etimologia = palabra_menester[0]['etimologia']
+  assert etimologia == "Del lat. ministerium 'servicio', 'oficio'."
