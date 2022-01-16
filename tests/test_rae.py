@@ -6,7 +6,7 @@ def palabra_menester():
   rae = Definitions()
   return rae.get_definition('menester')
 
-def test_definitions_not_empty(palabra_menester):
+def test_acepciones_not_empty(palabra_menester):
   assert len(palabra_menester[0]['acepciones']) >= 1
 
 def test_ethymology(palabra_menester):
