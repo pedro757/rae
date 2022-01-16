@@ -1,6 +1,13 @@
 from rae.rae import Definitions
+import pytest
 
-def test_definitions_not_empty():
+@pytest.fixture
+def palabra_menester():
   rae = Definitions()
-  polimorfismo = rae.get_definition('polimorfismo')
-  assert len(polimorfismo['acepciones']) >= 1
+  return rae.get_definition('menester')
+
+def test_definitions_not_empty(palabra_menester):
+  assert len(palabra_menester[0]['acepciones']) >= 1
+
+def test_ethymology(palabra_menester):
+  assert palabra_menester[0]['etimologia'] == "Del lat. ministerium 'servicio', 'oficio'."
