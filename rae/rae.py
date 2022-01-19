@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from typing import TypedDict
+import os
 
 class Raiz(TypedDict):
   etimologia: str
@@ -11,7 +12,8 @@ class Definitions():
   def __init__(self):
     options = Options()
     options.headless = True
-    self.browser = webdriver.Firefox(options=options)
+    self.browser = webdriver.Firefox(options=options,
+            service_log_path=os.devnull)
     self.url = "https://dle.rae.es/"
 
   def get_definition(self, word:str) -> list[Raiz]:
