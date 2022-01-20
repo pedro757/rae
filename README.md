@@ -7,14 +7,16 @@ A scrapping implementation of selenium for the spanish official dictionary
 
 `pip install rae`
 
-### Usage
+### Basic Usage
 
 ```python
 from rae import Definitions
 
 rae = Definitions()
 
-print(rae.get_definition('hastiar'))
+word = rae.get_definition('hastiar')
+
+print(word)
 ```
 
 It will print out something like this:
