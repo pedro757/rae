@@ -24,16 +24,19 @@ class Definitions():
     acepciones = []
     self.browser.get(self.url + word)
     raices = self.browser.find_elements(
-      By.XPATH, "//div[@id='resultados']/article"
+      By.XPATH,
+      "//div[@id='resultados']/article",
     )
     for raiz in raices:
       id = raiz.get_attribute('id')
       article = f"//article[@id='{id}']/"
       etimologia = self.browser.find_element(
-        By.XPATH, article + "p[starts-with(@class, 'n2')]"
+        By.XPATH,
+        article + "p[starts-with(@class, 'n2')]",
       )
       acepciones = self.browser.find_elements(
-        By.XPATH, article + "p[starts-with(@class, 'j')]"
+        By.XPATH,
+        article + "p[starts-with(@class, 'j')]",
       )
       palabra.append(
         {
