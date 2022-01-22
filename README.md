@@ -64,6 +64,12 @@ origins based on the ethymology, one from latin and the other two from french
 ]
 ```
 
+## TODO:
+- [ ] Support for verbs conjugation
+- [ ] Support specific time conjugation e.g. participio
+- [ ] Support "adjetivos", "adverbios", and "locuciones verbales, adverbiales
+   y adjetivas"
+
 ## Contribuiting
 Bug reports, feature suggestions and especially code contributions are welcome. You open a GitHub issue or pull
 request. Please read [this document](CONTRIBUTING.md) before opening an issue.
