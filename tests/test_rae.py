@@ -1,4 +1,4 @@
-from rae.rae import Definitions, Raiz
+from rae_dle import Definitions, Raiz
 import pytest
 
 

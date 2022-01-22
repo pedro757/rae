@@ -5,12 +5,12 @@ A scrapping implementation of selenium for the spanish official dictionary
 
 ### Installation
 
-`pip install rae`
+`pip install rae_dle`
 
 ### Basic Usage
 
 ```python
-from rae import Definitions
+from rae_dle import Definitions
 
 rae = Definitions()
 

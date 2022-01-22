@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "rae"
+name = "rae_dle"
 version = "0.1.0"
 description = ""
 authors = ["Pedro Sanchez <pedrosanchez757@hotmail.com>"]
