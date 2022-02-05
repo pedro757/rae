@@ -3,6 +3,7 @@
 Before opening an issue, please ensure that:
   - Use `yapf` to format and style the code
   - Use `snake_case` to name variables and follow the style of the code
+  - Use [convetional commit messages](https://www.conventionalcommits.org/en/v1.0.0/#summary)
 
 ### What should I do before opening an issue?
 
