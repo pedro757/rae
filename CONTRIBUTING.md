@@ -16,3 +16,8 @@ When opening a new issue, please include this:
   - A clear description of the bug
   - A minimal config wherein the bug could be repreduced
 
+### How to setup my development environment?
+  - Install [poetry](https://python-poetry.org/docs/#installation)
+  - Run `poetry install`
+  - Run `poetry shell`
+  - Develop!
