@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.common.by import By
 from typing import TypedDict
 import os
@@ -12,10 +13,11 @@ class Raiz(TypedDict):
 
 class Definitions():
   def __init__(self):
+    service = Service("geckodriver", log_path=os.devnull)
     options = Options()
     options.headless = True
     self.browser = webdriver.Firefox(
-      options=options, service_log_path=os.devnull
+      options=options, service=service
     )
     self.url = "https://dle.rae.es/"
 
