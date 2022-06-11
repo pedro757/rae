@@ -66,7 +66,7 @@ origins based on the ethymology, one from latin and the other two from french
 
 ## TODO:
 - [ ] Support for verbs conjugation
-- [ ] Support specific temps conjugation e.g. participio
+- [ ] Support specific tense conjugation e.g. participio
 - [ ] Support "adjetivos", "adverbios", and "locuciones verbales, adverbiales
    y adjetivas"
 
