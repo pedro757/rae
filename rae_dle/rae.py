@@ -16,9 +16,7 @@ class Definitions():
     service = Service("geckodriver", log_path=os.devnull)
     options = Options()
     options.headless = True
-    self.browser = webdriver.Firefox(
-      options=options, service=service
-    )
+    self.browser = webdriver.Firefox(options=options, service=service)
     self.url = "https://dle.rae.es/"
 
   def get_definition(self, word: str) -> list[Raiz]:
